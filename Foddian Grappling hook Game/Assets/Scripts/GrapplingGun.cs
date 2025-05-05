@@ -196,7 +196,6 @@ public class GrapplingGun : MonoBehaviour
                     float Lerp = Mathf.MoveTowards(m_springJoint2D.distance, distanceVector.magnitude, Time.deltaTime*launchSpeedLerp*Mathf.Log(m_springJoint2D.distance));
                     m_springJoint2D.distance = Lerp;
                     m_springJoint2D.frequency = launchSpeed;
-                    print(Lerp);
                     m_springJoint2D.enabled = true;
                     break;
 
